@@ -18,9 +18,10 @@
         <h1>Portfolio María Cabrera 🤓</h1>
 
         <nav>
-            <a href="https://www.linkedin.com/in/mar%C3%ADa-estela-cabrera-valderrama-562a57210/">Experiencia</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="https://twitch.tv/midudev">Twitch</a>
+            <a href="https://www.linkedin.com/in/mar%C3%ADa-estela-cabrera-valderrama-562a57210/" target="_blank"
+                rel="noreferrer">LinkedIn</a>
+            <a href="#Proyectos">Proyectos</a>
+            <a href="https://twitch.tv/midudev" target="_blank" rel="noreferrer">Twitch</a>
         </nav>
     </header>
 
@@ -31,12 +32,13 @@
             <li class="list-item"><em>Powerbi</em></li>
             <li class="list-item"><em>Excel avanzado</em></li>
         </ul>
-
-        <img id="foto-maría" title="foto María" alt="una fotografía mia hermosa preciosa" src="/Images/IMG_2468.JPG"
-            width="200" height="200">
+        <a download href="/Images/IMG_2468.JPG">
+            <img id="foto-maría" title="foto María" alt="una fotografía mia hermosa preciosa" src="/Images/IMG_2468.JPG"
+                width="200" height="200">
+        </a>
         <input type="datetime-local">
         <input type="file">
-        <h2>Proyectos realizados</h2>
+        <h2 id="Proyectos">Proyectos realizados</h2>
 
         <aside>
             <header>
@@ -49,7 +51,9 @@
                 <li>SQL</li>
             </ol>
         </aside>
-
+        <button>
+            Haz clic aquí
+        </button>
         <section>
             <article>
                 <header>
@@ -59,10 +63,73 @@
                     El sitio incluye una página de inicio, una página de servicios y una página de contacto.</p>
             </article>
         </section>
+
+        <section>
+            <h2>Preguntas frecuentes</h2>
+            <details>
+                <summary>¿Qué lenguajes de programación dominas?</summary>
+                <p>Domino HTML, CSS, JavaScript, Python y SQL.</p>
+            </details>
+            <details>
+                <summary>¿Cuál es tu experiencia en desarrollo web?</summary>
+                <p>Tengo más de 15 años de experiencia en desarrollo web, trabajando con diversas tecnologías y
+                    herramientas.</p>
+            </details>
+            <details>
+                <summary>¿Cómo puedo contactarte?</summary>
+                <p>Puedes contactarme a través de mi correo electrónico o por LinkedIn.</p>
+        </section>
+        <section>
+            <h2>formulario de contacto</h2>
+
+            <form method="post action=" /">
+                <fieldset>
+                    <legend> Información personal</legend>
+                    <div><label for="name"> Nombre:</label>
+                        <input type="text" name="name" placeholder="María Cabrera Valderrama" required>
+                    </div>
+                    <div><label for="name"> Email:</label>
+                        <input type="email" name="email" placeholder="estelacabreravalderrama@gmail.com" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend> Información adicional</legend>
+                    <div><label for="name"> Telefono:</label>
+                        <input type="tel" name="phone" placeholder="9 66413493" required>
+                    </div>
+                    <div><label for="name"> Fecha:</label>
+                        <input type="date" name="date" placeholder="07-08-2025" required>
+                    </div>
+
+            </form>
+        </section>
+
+        <fieldset>
+        <legend>Otros</legend>
+        <div>
+            <label for="why">¿Por qué nos quieres contactar?</label>
+            <select name="why" id="why">
+                <option value="consultation">Consulta</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Otro</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="terms">¿Aceptas los términos?:</label>
+            <input type="checkbox" name="terms" id="terms" required>
+        </div>
+        </fieldset>
+        <input type="submit" value="Enviar Contacto">
+
+
+        </fieldset>
 </body>
 </main>
 
 <footer>
     <p>© 2025 María Estela Cabrera Valderra</p>
-    <p>Contacto: 966413493 <a href="mailto:marí
-<html>
+
+    <a href="tel: +56966423493">Llama al 966413493</a>
+    <a href="mailto:estelacabreravalderrama@gmail.com">Envíame un correo</a>
+    <html>
